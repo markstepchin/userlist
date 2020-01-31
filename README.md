@@ -21,7 +21,7 @@ Use a CSS pre-processor (SASS preferred)
 Use Fetch API to get data
 Redux or Context API is a bonus
 
-## Coding Challenge requirements
+## Technical Decisions
 
 I didn't use Redux or React Context because it would be overkill in this case. The app has 2 components:
 
