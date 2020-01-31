@@ -1,3 +1,5 @@
+To view the app hosted live, go to [https://compassionate-bohr-149fff.netlify.com/](https://compassionate-bohr-149fff.netlify.com/)
+
 To launch this project, clone the repo, run
 `npm install` and
 `npm start`, and open [http://localhost:3000](http://localhost:3000) to view it in the browser.
