@@ -1,12 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To launch this project, clone the repo, run
+`npm install` and
+`npm start`, and open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-To launch this project, clone the repo and run the following commands:
-`npm install`
-`npm start`
-
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### Coding Challeng requirements
+### Coding Challenge
 
 We want you to build a small React App (using TypeScript is a bonus!) which fetches users from an endpoint (https://jsonplaceholder.typicode.com/users or any other endpoint you want) and renders a table that represents data.
 
@@ -25,13 +21,13 @@ Use a CSS pre-processor (SASS preferred)
 Use Fetch API to get data
 Redux or Context API is a bonus
 
-## Coding Challeng requirements
+## Coding Challenge requirements
 
-I didn't use redux or context because it would be overkill in this case. The app has 2 components:
+I didn't use Redux or React Context because it would be overkill in this case. The app has 2 components:
 
 ### App
 
-Rsponsible primarily for fetching user data
+Responsible primarily for fetching user data
 
 ### Users
 
