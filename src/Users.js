@@ -55,7 +55,7 @@ const Users = ({ data, loading }) => {
           </Tooltip>
         </Box>
 
-        <Table className={classes.table} aria-label="simple table">
+        <Table className={classes.table}>
           <TableHead>
             <TableRow>
               <TableCell>

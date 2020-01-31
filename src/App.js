@@ -21,9 +21,9 @@ function App() {
   }, []);
 
   return (
-    <Box mt={5}>
+    <Box m={2} mt={5}>
       <Grid container justify="space-around" alignItems="center">
-        <Grid item>
+        <Grid item lg={8} xs={12}>
           <Users data={data} loading={loading} error={error} />
         </Grid>
       </Grid>
