@@ -12,6 +12,7 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
 import Tooltip from "@material-ui/core/Tooltip";
+import CircularProgress from "@material-ui/core/CircularProgress";
 import FilterNoneIcon from "@material-ui/icons/FilterNone";
 import copyUtil from "./copyUtil";
 
@@ -20,12 +21,10 @@ const TABLE_CLASSNAME = "MuiTable-root";
 const useStyles = makeStyles({
   table: {
     minWidth: 650
-    // maxWidth: 1000,
-    // margin: 5
   }
 });
 
-const Users = ({ data }) => {
+const Users = ({ data, loading }) => {
   const classes = useStyles();
 
   const [sortDirection, setSortDirection] = useState("asc");
@@ -78,7 +77,6 @@ const Users = ({ data }) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {/* TODO sort */}
             {data
               .sort((a, b) => {
                 // multiplying by -1 reverses the order
@@ -98,6 +96,10 @@ const Users = ({ data }) => {
               ))}
           </TableBody>
         </Table>
+
+        <Box display="flex" justifyContent="center" m={3}>
+          {loading && <CircularProgress />}
+        </Box>
       </Box>
     </TableContainer>
   );
